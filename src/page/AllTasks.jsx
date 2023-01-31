@@ -24,9 +24,10 @@ const AllTasks = () => {
   const handleSectorAdd = () => {
     if (sectorVal === "") {
       alert("You have to fill out the field");
+    } else {
+        addSector(sectorVal);
+        setSectorVal("");
     }
-    addSector(sectorVal);
-    setSectorVal("");
   };
 
   //  Handle AddTask
